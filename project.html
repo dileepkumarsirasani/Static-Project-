@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<body>
+   
+<style>
+body{
+    margin:0;
+}
+
+
+.parent1{
+        color:red;
+        font-size:20px;
+
+    }
+    .par1{
+        display: grid;
+        grid: auto / auto auto auto;
+        
+    }
+    .par2{
+        display: grid;
+        
+    }
+    .par3{
+        display: grid;
+        grid: auto / auto auto auto;
+    }
+    #banner{
+        
+        width:auto;
+        
+        overflow-x: hidden;
+        margin-top: 0;
+    }
+    #banner img{
+        height: 700px;
+        width:100%;
+        
+    }
+    
+    .design{
+        background:orange ;
+        border:1px solid black ;
+        display: flex;
+    }
+    .design1{
+        margin-left:150px ;
+        flex: 2;
+    }
+    .design2{
+        margin-right: 150px;
+        flex: 1;
+    }
+    .online{
+        text-align: center;
+        color: brown;
+    }
+    
+
+    .service{
+        text-align: center;
+    }
+    .image{
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-gap: 10px;
+        
+    }
+    .im{
+        
+        text-align: center;
+        
+        padding: 2px;
+        padding-top: 20px;
+        background-color: cadetblue;
+    
+    }
+    .image:hover{
+            color:red;
+            background-color: aliceblue;
+            
+        }
+    .client{
+        text-align: center;
+        color: darkred;
+    }
+    .upload{
+        display: grid;
+        grid-template-columns: repeat(5,3fr);
+        border: 2px solid red;
+    }
+    .upload img:hover{
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+    }
+    .cater{
+        text-align: center;
+        color:darkturquoise;
+        border: 0.5px solid red;
+    }
+    .non{
+        display:grid;
+        grid-template-columns: repeat(4,2fr);
+        border: 0.5px solid grey;
+        color:whitesmoke;
+        background-color: coral;
+    }
+    .non:hover{
+        color: greenyellow;
+        text-align: center;
+        
+    }
+    .non222{
+        text-align: center;
+    }
+    .rate{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        background-color: orangered;
+        text-align: center;
+    }
+    
+    .prove{
+        padding-top:25px;
+    }
+    
+    .go{
+        text-align: center;
+        color: blueviolet;
+    }
+    .ananth{
+        text-align: center;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+    
+        text-align: center;
+        color: white;
+        background-color: black;
+    }
+    .end{
+        text-align: center;
+        background-color: darkslategrey;
+        position: absolute;
+        width: 100%;
+    
+    }
+    button{
+        background-color: black;
+        color: white;
+        padding: 10px;
+    }
+.top-banner {
+    background-image: url('https://i.pinimg.com/originals/0b/5f/c8/0b5fc864c174f4bea7e93892e5eeb00a.jpg');
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.web-img {
+    width: 350px;
+}
+.web{
+    display:flex;
+    margin-left: 40px;
+       justify-content: space-between;
+    text-align: center;
+}
+.webb{
+    margin-left: 100px;
+    margin-right: 300px;
+}
+.parent{
+    border:2px solid red;
+        padding: 5px;
+        display: grid;
+        grid: auto / auto auto auto;
+        background:whitesmoke;
+        align-items: center;
+        height: 100px;
+        position:fixed;
+        width: 100%;
+        
+}
+
+
+@media screen and (max-width:768px){
+    .top-banner {
+        height: 250px;
+        background-size: 100% 100%;
+    }
+    .web-img {
+        width: 100%;
+    }
+    .web {
+        display: block;
+        margin-left: 0px;
+    }
+    .webb {
+        margin-left:0px;
+        margin-right: 0px;
+        padding: 12px 12px 12px 12px;
+    }
+    .parent {
+        border: none;
+        padding: 0px;
+        display: inline-block;
+        grid: inherit;
+        background: whitesmoke;
+        align-items: center;
+        height: auto;
+        position: inherit;
+        width: 100%;
+        word-break: break-word;
+    }
+    .upload {
+        display: block;
+        grid-template-columns: none;
+        border: 2px solid red;
+    }
+    .non {
+        display: block;
+        grid-template-columns: none;
+        padding: 0px 0px 0px 10px;
+    }
+    .rate {
+        display: block;
+    }
+    .footer {
+        display: block;
+        grid-template-columns: none;
+    }
+    .image {
+        grid-template-columns: none;
+    }
+}
+ @media screen and (max-width:768px){
+   
+ }
+		@media screen and (max-width:768px){
+			.design1 {
+           margin-left: 0px;
+           flex: none;
+
+     }
+	 .design{
+		 display: block;
+	 }
+		}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 320px) {
+  .parent{
+  	width: 100%; 
+  }
+}
+		
+</style>
+<body>
+	
+	<div class="parent">
+<div class="par1">
+	<div class="parent1">WEB DESIGN</div>
+	<div class="parent1">DIGITAL MARKETING</div>
+	<div class="parent1">ECOMMERCE</div>
+</div>
+
+
+   <div class="par2">
+		<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/logo.png" alt="webbazzar" />
+	</div>
+		<div class="par3">
+			<div class="parent1">APPLICATIONS</div>
+			<div class="parent1">TECHNOLOGIES</div>
+			<div class="parent1">CONTACT US</div>
+		</div>
+	</div>
+
+	<div id="banner" class="top-banner"></div>
+		<!-- <img src="https://i.pinimg.com/originals/0b/5f/c8/0b5fc864c174f4bea7e93892e5eeb00a.jpg"></div> -->
+	<div class="design">
+		<div class="design1">
+	<h1>WEB DESIGN & <br>DEVELOPMENT DIGITAL</br> MARKETING</h1>
+	<h2>WEB APPLICATION</h2>
+	<h4>We Ensure Innovative Web Design, Development And Digital<br>
+Marketing To Take Your Business To New Heights</br></h4>
+<select >
+	<option>Contact us</option>
+</select>
+</div>
+<div class="design2">
+	<h1>LET'S CONNECT</h1>
+	<form>
+        <label for="">
+		<input type="text" name="name" /> <br> <br>
+        
+		<input type="text" name="email"><br> <br>
+		<input type="text" name="number"><br> <br>
+        
+		<button>GET STARTED</button>
+	</form>
+</div>
+</div>
+
+<div class="online">
+	<h1>GET ONLINE,GET NOTICED</h1>
+</div>
+<div class="web">
+    <img src="https://www.webbazaar.in/wp-content/uploads/2021/12/aboutt-image.png" alt="webbazaar" class="web-img">
+	<div class="webb">
+		<h2>Web Application , Website Development and Digital Marketing Agency</h2>
+		<h1>12+ Years Experience</h1>
+		<h3>We develop futuristic and dynamic apps that enhance your brands value and generate higher revenues for you. Just get in touch with us and let’s discuss the idea. we are one of the pioneer service providers in India. Let us help you take your business to the next level with the help of a digital environment. As a service provider, we fully understand the requirements and all our activities are guided by the sole aim of making your company digitally successful.</h3>
+		<button>DISCOVER MORE </button>
+	</div>
+	</div>
+	<div class="service">
+		<h1>OUR SERVICES</h1>
+	</div>
+	<div class="image">
+	<div class="im">
+		<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/service-icon1.png" alt="webbazaar">
+		<h2>Web Application</h2>
+		<p>Take your business one step higher with<br> an web application. With the best web application <br>designers, our set of experts will develop a web<br> application that suits your company’s requirements.</p>
+	</div>
+	<div  class="im">
+	<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/service-icon.png" alt="webbazaar">	
+	<h2>Website Design and Development</h2>
+	<p>From building to hosting a website, we are the<br> one stop solution for all your needs related to <br>website development. From e-commerce websites to WordPress<br>development services, We have experienced experts to do it.</p>
+	</div>
+	<div  class="im">
+		<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/service-icon2.png" alt="">
+		 <h2>E-commerce solution</h2>
+		 <p>Ecommerce website that exceed horizon and raises<br>the bar in user experience and gives you prospect to<br> increase your returns on investment</p>
+	</div>
+	<div class="im">
+		<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/service-icon3.png" alt="">
+		<h2>Digital Marketing</h2>
+		<p>We are 12 years experienced digital marketing company,<br> served 100+ customers with proven results and having<br> 40+ experience digital marketing experts. We are <br>very transparent and honest with our approach. Make your online <br>presence felt to your audience through our Digital Marketing services.</p>
+	</div>
+	<div class="im">
+	     <img src="https://www.webbazaar.in/wp-content/uploads/2021/12/service-icon.png" alt="">
+		 <h2>Mobile Application</h2>
+		 <p>The value the mobile app creates and the ability<br> to retain customers is amazing. If you know mobile apps can<br> change the game in your business, you're awesome. Undoubtedly,<br>you can make your business much more efficient by investing<br>in mobile app development. it is a golden time for companies to take<br>their business to the next level with mobile apps.</p>	
+	</div>
+	<div class="im">
+		<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/workspeace.png" alt="">
+		<h2>Google Workspace</h2>
+		<p>All that you need in one package. Learn more about<br>Google's powerful online tools. Messaging, meetings, docs, and<br>tasks, now thoughtfully connected. Try it for free. Flexible Payment<br> Plans. Work Offline. Integrated Workspace. Types: New Business,<br> Small Business.</p>
+		</div>
+		</div>
+	<div class="client">
+		<h1>OUR CLIENTS</h1>
+	</div>
+		<div class="upload">
+			<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/c-logo1-1.png" alt="">
+			<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/c-logo2-1.png" alt="">
+			<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/c-logo3-1.png" alt="">
+			<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/c-logo4-1.png" alt="">
+			<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/spa-logo.png" alt="" width="200px">
+			<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/c-logo5-1.png" alt="">
+			<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/c-logo6-1.png" alt="">
+			<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/c-logo7-1.png" alt="">
+			<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/c-logo14-1.png" alt="">
+			<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/c-logo8-1.png" alt="">
+			<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/c-logo9-1.png" alt="">
+			<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/c-logo10-1.png" alt="">
+			<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/c-logo11-1.png" alt="">
+			<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/stmartha-logo.png" alt="">
+			<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/c-logo12-1.png" alt="">
+		</div>
+		
+		<div class="cater">
+			<h1>INDUSTRY WE CATER</h1>
+		</div>
+		<div class="non">
+			<h2>B2B</h2>
+			<h2>B2C</h2>
+			<h2>E-COMMERCE</h2>
+			<h2>ENTERPERPRISE</h2>
+			<h2>EDUCATION</h2>
+			<h2>NON-PROFIT</h2>
+			<h2>STARTUPS</h2>
+			<h2>AUTOMOTIVE</h2>
+		</div>
+		<div class="non222">
+			<button>READ MORE</button>
+		</div>
+		
+	<div class="rate">
+		<div class="prove">
+			<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/award1.png" alt="">
+			<h1>Active Clients</h1>
+			<h1>1000+</h1>
+		</div>
+		<div class="prove">
+			<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/award12.png" alt="">
+			<h1>Success Rate</h1>
+			<h1>98%</h1>
+		</div>
+		<div class="prove">
+			<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/award3.png" alt="">
+			<h1>Customer Satisfaction</h1>
+			<h1>97%</h1>
+		</div>
+		<div class="prove">
+			<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/award4.png" alt="">
+			<h1>Proven Results</h1>
+			<h1>98%</h1>
+		</div>
+	</div>
+	<div class="go">
+		<h1>WHY GO WITH WEBBAZAAR</h1>
+	</div>
+	<div class="ananth">
+		<img src="https://webbazaar.in/wp-content/uploads/2021/12/testimonia2-img.png" alt="">
+		<h1>Ananth Krishna</h1>
+		<h2>Inspired Indian Foundation</h2>
+		<p>On behalf of Inspired Indian Foundation, I would place on record the commendable<br> job you guys have done in the making of www.inspireindianfoundation.org.<br> It was a great learning experience in working with a completely dedicated team.<br> This is the Foundation's second website and rest assured, we will come back <br>to you in case we launch a third one.</p>
+	</div>
+	<div class="footer">
+	<div>
+		<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/white-logo.png" alt="">
+		<h1>1st Floor, Saraswathamma Complex,<br>
+			TC Palya Main Road, Ramamurthy Nagar,<br>
+			Bangalore-560016<br>
+			sales@webbazaar.com,<br>
+			+91 8088906461</h1>
+		<img src="./company pics/fbimage.png" width="50px" alt="">
+		<img src="./company pics/twitterimage.png" width="50px" alt="">
+		<img src="./company pics/whatsappimage.webp" width="50px" alt="">
+		<img src="./company pics/youtube.png" width="50px" alt="">
+	</div>
+	<div>
+		<h1>COMPANY INFO</h1>
+		<h3>About Us</h3>
+		<h3>Media</h3>
+		<h3>Awards</h3>
+		<h3>Terms of Use</h3>
+		<h3>Contact Us</h3>
+		<h3>Privacy Policy</h3>
+		<h3>Sitemap</h3>
+		<h3>FAQs</h3>
+		<h3>Clients</h3>
+		<h3>Testimonials</h3>
+	</div>
+	<div>
+		<h1>OUR OFFICIAL PARTNER</h1>
+		<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/partner1.jpg" alt=""><br>
+		<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/partner2.jpg" alt=""><br>
+		<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/partner3.jpg" alt=""><br>
+		<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/partner4.jpg" alt=""><br>
+		<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/footer-award1.png" alt=""><br>
+		<img src="https://www.webbazaar.in/wp-content/uploads/2021/12/footer-award2.png" alt=""><br>
+	</div>
+	</div>
+	<div class="end">
+		<h1>Copyright © 2021 webbazaar.com . All Rights Reserved</h1>
+	</div>
+</body>
+</html>
