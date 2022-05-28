@@ -224,12 +224,13 @@ body{
     .upload {
         display: block;
         grid-template-columns: none;
-        border: 2px solid red;
+        text-align: center;
     }
     .non {
         display: block;
         grid-template-columns: none;
         padding: 0px 0px 0px 10px;
+        text-align: center;
     }
     .rate {
         display: block;
@@ -241,27 +242,50 @@ body{
     .image {
         grid-template-columns: none;
     }
+    .design{
+        text-align: center;
+    }
+    .design2{
+        margin-left: 50px;
+    }
+    
 }
- @media screen and (max-width:768px){
-   
+ @media screen and (min-width:1024px){
+   .upload{
+       display: block;
+   }
  }
 		@media screen and (max-width:768px){
 			.design1 {
            margin-left: 0px;
            flex: none;
-
-     }
+        }
+        .par2{
+             margin-left: 200px;
+        }
 	 .design{
 		 display: block;
 	 }
+    
 		}
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 600px) {
   .parent{
   	width: 100%; 
   }
+  .par1{
+      display: block;
+      text-align: center;
+  }
+  .par3{
+      display:block;
+      text-align: center;
+  }
+  .par2{
+    margin-left: 30px;
+}
 }
 		
 </style>
